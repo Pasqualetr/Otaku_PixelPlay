@@ -1,0 +1,413 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Videogiochi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link per utilizzare framwork bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/logoPanda2.png" type="image/png">
+    <link rel="icon" href="img/logoPanda2.png" type="image/png">
+    <style>
+
+        #carouselExampleDark {
+            width: 60%;
+            height: 30%;
+            overflow-x: auto;
+            border-collapse: collapse;
+        }
+
+        .cod {
+            color: white;
+        }
+
+        body {
+            background-color: #bebebc;
+        }
+
+
+        footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        div .button {
+            border-radius: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left; /* rendere le tabelle per x tutti i dispositivi*/
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        @media only screen and (max-width: 600px) {
+            th, td {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            #carouselExampleDark {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> <img src="img/logoPanda2.png" width="80px" style="border-radius:30px" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--contenuto-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!--videogiochi-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="Videogiochi.html">Videogiochi</a>
+                    </li>
+                    <!--Anime-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="Anime.html">Anime</a>
+                    </li>
+                    <!--Forum-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Forum
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Forum_videogiochi.html">Videogiochi</a></li>
+                            <li><a class="dropdown-item" href="Forum_anime.html">Anime</a></li>
+                        </ul>
+                    </li>
+                    <!--Recensioni-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Recensioni
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="recensioniGame.html">Videogiochi</a></li>
+                            <li><a class="dropdown-item" href="Recensioni_anime.html">Anime</a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+
+                <!--Scritta centrale OtakuPixelPlay-->
+                <div style="color: white; margin-right: auto;">
+                    <a href="index.html" style=" text-decoration: none; color:white"><h1>OtakuPixelPlay</h1></a>
+                </div>
+
+
+                <!-- Pulsanti registrati e accedi-->
+                <div style="margin-right:20px">
+                    <button type="button" class="btn btn-outline-success" style="color:ghostwhite"><a href="Accedi.html" style=" text-decoration: none; color:white">Accedi</a></button>
+                    <button type="button" class="btn btn-outline-success" style="color: ghostwhite "><a href="Registrati.html" style=" text-decoration: none; color:white">Registrati</a></button>
+                </div>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="box-shadow: 0 0 0 1px rgba(95, 177, 97, 0.5); color: ghostwhite;">
+                    <button class="btn btn-outline-success" type="submit" style="color: white;">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br />
+    <h5 style="text-align: center; margin: 20px; background-image: url(img/sfondoTesto.jpg); border-radius: 20px; padding: 20px; color: white;">
+        Esplora il nostro vasto assortimento di videogiochi per tutte le piattaforme, dalle ultime novità ai classici intramontabili. Dai giochi di ruolo agli sparatutto,
+        dai platform agli indie, abbiamo tutto ciò di cui hai bisogno per alimentare la tua passione videoludica.
+        La nostra missione è offrire non solo i migliori videogiochi, ma anche un servizio impeccabile. Con spedizioni veloci, un'interfaccia intuitiva e un team di supporto dedicato,
+        rendiamo l'esperienza di acquisto online semplice e gratificante.
+    </h5>
+    <br />
+    <br />
+    <!--Bottone destra e sinistra-->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" style="margin:auto">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+        </div>
+        <!--Carosello immagini-->
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="img/cod3.jpeg" class="d-block w-100" alt="Prima Immagine" style="border-radius:30px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="cod"><strong>La guerra è cambiata!</strong></h5>
+                    <p class="cod">
+                        Nel seguito diretto di Call of Duty:Modern Warfare 2,
+                        il capitano Price e la Task Force 141 affrontano la minaccia definitiva.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/fortnite.webp" class="d-block w-100" alt="Seconda Immagine" style="border-radius:30px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="cod"><strong>NUOVE SKIN DISPONIBILI</strong></h5>
+                    <p class="cod">Crea il tuo stile di gioco con le nuove skin.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/lastof.webp" class="d-block w-100" alt="Terza Immagine" style="border-radius:30px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="cod"><strong>The Last of us 2 ramake</strong></h5>
+                    <p class="cod">Non perderti il remake per ps5</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/tek8.jpeg" class="d-block w-100" alt="Quarta Immagine" style="border-radius:30px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="cod"><strong>Acquista ora!</strong></h5>
+                    <p class="cod">Il nuovo capitolo della saga</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/hol.jpeg" class="d-block w-100" alt="Quinta Immagine" style="border-radius:30px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="cod"><strong>Scrivi la tua storia!</strong></h5>
+                    <p class="cod">
+                        Vivi in una Hogwarts del 1800 ed esplora un mondo che ti permettera<br />
+                        di essere il mago o la strega che hai sempre sognato
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br />
+    <br />
+
+    <!--Vendita-->
+    <table>
+        <tr>
+            <td>
+
+                <div class="card" style="width: 18rem;margin-right:70px;margin-left:95px">
+                    <img src="img/tlo.jpeg" class="card-img-top" alt="Primo prodotto">
+                    <div class="card-body">
+                        <h5 class="card-title">THE LAST OF US 2 REMASTERED</h5>
+                        <p class="card-text">The Last of Us Parte II è un videogioco di sopravvivenza con elementi action e stealth e sfumature horror ambientato in un vasto mondo, ma comunque chiuso.</p>
+                    </div>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">19,98€</li>
+                    </ul>
+
+                    <div class="card-body">
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Acquista ora
+                        </button>
+                    </div>
+                </div>
+            </td>
+
+            <td>
+                <div class="card" style="width: 18rem; margin-right: 70px;">
+                    <img src="img/cod31.jpeg" class="card-img-top" alt="Secondo prodotto">
+                    <div class="card-body">
+                        <h5 class="card-title">Call of Duty 3 modern warfare</h5>
+                        <p class="card-text">
+                            Call of Duty: Modern Warfare 3 è un videogioco del genere sparatutto in prima persona.
+                            Il videogioco è l'ottavo capitolo della serie Call of Duty e terzo e ultimo capitolo della serie Modern Warfare,
+                            e la trama riprende dagli avvenimenti di Call of Duty: Modern Warfare 2.
+                        </p>
+                    </div>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">80,98€</li>
+                    </ul>
+
+                    <div class="card-body">
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Acquista ora
+                        </button>
+                    </div>
+                </div>
+            </td>
+
+            <td>
+                <div class="card" style="width: 18rem; margin-right: 70px;">
+                    <img src="img/tek8game.jpeg" class="card-img-top" alt="Terzo Prodotto">
+                    <div class="card-body">
+                        <h5 class="card-title">Tekken 8</h5>
+                        <p class="card-text">
+                            Sfida il tuo destino! TEKKEN 8 continua la tragica saga della linea di sangue Mishima e dei suoi terribili match padre-figlio che scuotono il mondo.
+                            Dopo aver sconfitto suo padre, Heihachi Mishima, Kazuya continua la sua conquista per il dominio globale, usando le forze della G Corporation per muovere guerra al mondo.
+
+                        </p>
+                    </div>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">279,98€</li>
+                    </ul>
+
+                    <div class="card-body">
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Acquista ora
+                        </button>
+
+                    </div>
+
+                </div>
+            </td>
+
+            <td>
+                <div class="card" style="width: 18rem; margin-right: 70px;">
+                    <img src="img/spider.jpeg" class="card-img-top" alt="Quarto Prodotto">
+                    <div class="card-body">
+                        <h5 class="card-title">Spiderman</h5>
+                        <p class="card-text">
+                            Marvel's Spider-Man contiene tutte le acrobazie, le improvvisazioni e le ragnatele che hanno reso celebre l'arrampicamuri,
+                            uno dei supereroi più famosi al mondo, introducendo allo stesso tempo elementi mai visti in un gioco di Spider-Man. Uno Spider-Man mai visto prima.
+
+                        </p>
+                    </div>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">80,98€</li>
+                    </ul>
+
+                    <div class="card-body">
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Acquista ora
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+            <td>
+                <div class="card" style="width: 18rem; margin-right: 70px;">
+                    <img src="img/tflash.png" class="card-img-top" alt="Quinto Prodotto">
+                    <div class="card-body">
+                        <h5 class="card-title">Flashback2</h5>
+                        <p class="card-text">
+                            Flashback era in anticipo sui tempi e offriva grandi innovazioni con superbe animazioni dei personaggi.
+                            Vero pioniere nel 1992, il gioco ha anche raggiunto uno status leggendario nei videogiochi grazie alla sua storia ricca e avvincente .
+                        </p>
+                    </div>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">50,98€</li>
+                    </ul>
+
+                    <div class="card-body">
+
+                        <!-- Bottone Modale -->
+                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Prenota ora
+                        </button>
+
+
+                    </div>
+                </div>
+            </td>
+
+        </tr>
+    </table>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"><strong>Articolo prenotato!</strong></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Articolo prenotato con successo!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Torna a gli acquisti</button>
+                    <a href="Accedi.html" class="btn btn-outline-danger">Prenota</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Il tuo articolo è nel carrello!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Articolo aggiunto correttamente nel carrello.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Ritorna a gli acquisti</button>
+                    <a href="acquistoRiuscito.html" class="btn btn-danger">Procedi con l'ordine</a><!--modificare link-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+
+
+    <!--parte finale-->
+    <footer>
+        <div>
+            <p style="text-align:left ">
+                Contatti: <br />
+                Telefono:3352287023<br />
+                Indirizzo: Via Spada Tratta, 12 Los Angels<br />
+                Email: OtakuPixelPlay@gmail.com
+            </p>
+        </div>
+        <div>
+            <button type="button"><img src="img/mastercard.png" width="80px" /></button>
+            <button type="button"><img src="img/paypal.png" width="60px" /></button>
+            <button type="button"><img src="img/visa.png" width="80px" /></button>
+
+        </div>
+        <br />
+        <button type="button"><img src="img/iglogo.png" width="20px" height="20px" /></button>
+        <button type="button"><img src="img/tiktok.png" width="20px" height="20px" /></button>
+        <button type="button"><img src="img/fsocial.png" width="20px" height="20px" /></button>
+        <p> &copy; 2024 OtakuPixelPlay. Tutti i diritti riservati.</p><br />
+    </footer>
+</body>
+</html>

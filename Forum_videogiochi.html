@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/logoPanda2.png" type="image/png">
+    <title>Forum VideoGiochi Console & Pc</title>
+    <style>
+        body {
+            background-color: #bebebc;
+        }
+
+        footer {
+            text-align: center;
+            background: black;
+            color: white;
+        }
+
+        div .button {
+            border-radius: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left; /* rendere le tabelle per x tutti i dispositivi*/
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        @media only screen and (max-width: 600px) {
+            th, td {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> <img src="img/logoPanda2.png" width="80px" style="border-radius:30px" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--contenuto-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!--videogiochi-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="Videogiochi.html">Videogiochi</a>
+                    </li>
+                    <!--Anime-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="Anime.html">Anime</a>
+                    </li>
+                    <!--Forum-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Forum
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Forum_videogiochi.html">Videogiochi</a></li>
+                            <li><a class="dropdown-item" href="Forum_anime.html">Anime</a></li>
+                        </ul>
+                    </li>
+                    <!--Recensioni-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Recensioni
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="recensioniGame.html">Videogiochi</a></li>
+                            <li><a class="dropdown-item" href="Recensioni_anime.html">Anime</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <!--Scritta centrale OtakuPixelPlay-->
+                <div style="color: white; margin-right:auto;">
+                    <a href="index.html" style=" text-decoration: none; color:white"><h1>OtakuPixelPlay</h1></a>
+                </div>
+
+
+                <!-- Pulsanti registrati e accedi-->
+                <div style="margin-right:20px">
+                    <button type="button" class="btn btn-outline-success" style="color:ghostwhite"><a href="Accedi.html" style=" text-decoration: none; color:white">Accedi</a></button>
+                    <button type="button" class="btn btn-outline-success" style="color: ghostwhite "><a href="Registrati.html" style=" text-decoration: none; color:white">Registrati</a></button>
+                </div>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="box-shadow: 0 0 0 1px rgba(95, 177, 97, 0.5); color: ghostwhite;">
+                    <button class="btn btn-outline-success" type="submit" style="color: white;">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br />
+    <h5 style="text-align: center; margin: 20px; background-image: url(img/sfondoTesto.jpg); border-radius: 20px; padding: 20px; color: white;">
+        "Benvenuti al Forum di OtakuPixelPlay, il punto di ritrovo definitivo per tutti gli appassionati di videogiochi! Qui potrete discutere di tutti i vostri titoli preferiti, scambiare opinioni su nuove uscite, condividere consigli, 
+        trucchi e strategie vincenti, e partecipare a vivaci dibattiti sulla cultura videoludica. Che tu sia un veterano o un novizio, c'è spazio per tutti nella nostra community. Entra a far parte della discussione, conosci nuovi amici con la stessa passione e immergiti nel mondo dei videogiochi su OtakuPixelPlay Forum!"
+    </h5>
+    <br />
+
+
+    <h1 style=" text-align: center; margin-top: 30px;"><strong>Forum VideoGiochi Console & Pc</strong></h1>
+    <br /> <br />
+
+
+    <table class="table-secondary">
+        <thead>
+            <tr style="background-color:#bebebc;">
+                <th scope="col">Utente</th>
+                <th scope="col">Nome Gioco</th>
+                <th scope="col">Discussione</th>
+                <th scope="col">Console</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            <tr>
+                <th scope="row"><img src="img/png1.jpg" width="40px" height="40px" />Marco <br /> Ferrarelle</th>
+                <td><strong>call of duty modern warfare 3</strong></td>
+                <td>
+                    <strong>
+                        Call of Duty: Modern Warfare 3 è il prossimo sparatutto di Infinity Ward. In questo capitolo della serie il realismo è portato a livelli ancora più elevati e nei panni della recluta Keeshon Lewis,<br /> dovrete eseguire vere mansioni di veri soldati, aspettando ordini, guidando jeep da un luogo all'altro e molto altro ancora!
+                        La guerra è diventata totale e il tanto paventato terzo conflitto mondiale è ormai realtà: ora potrete calarvi nei panni degli operativi migliori del mondo e difendere città come New York, Parigi e Londra...<br />
+                        Una delle principali attrattive nel gameplay è la modalità Spec Ops, che fece la sua comparsa in Modern Warfare 2, nella quale dovrete cooperare per difendere una particolare zona da ondate di nemici sempre più consistenti.<br />
+                        Anche la narrazione e la longevità sono migliorate e, come in ogni capitolo di Call of Duty, il multiplayer presenta una vasta gamma di armi, sfide, livelli in mappe sempre più sofisticate.
+                    </strong>
+                </td>
+
+                <td>
+                    <strong>PS4</strong>
+                </td>
+            </tr>
+        </tbody>
+
+        <tbody class="table-group-divider">
+            <tr>
+                <th scope="row"><img src="img/png2.jpg" width="40px" height="40px" />Giorgio <br />Stadio</th>
+                <td><strong>Fortnite</strong></td>
+                <td>
+                    <strong>
+                        Ciao ragazzi volevo chiedervi un consiglio. Premetto che agli fps o ai battle royale non sono chissà che cosa perchè sono più tipo da RPG(migliaia di ore distrutte a dota2) però ogni tanto per farmi una partitina con qualche amico gioco anche a fortnite(essendo gli italiani quasi inesistenti a dota ).<br />
+                        Tornando al consiglio/problema avendo problemi terribili di mira ho voluto provare il dualshock 4 sul pc, mi sono trovato nettamente meglio e ho scoperto anche l'esistenza della mira assistita ed insomma ho scoperto un altro gioco. Quando torno al mouse c'è una totale inesistenza della mira assistita nonostante <br />
+                        l'abbia selezionata dal menù apposito. Ho provato varie sensibilità(anche se non c'entra molto) ma niente solo col joystick ho la mira assistita. Qualcun'altro che ha avuto il mio stesso problema e sa dirmi in cosa consiste? Grazie in Anticipo
+                    </strong>
+                </td>
+                <td><strong>PC<br />PS4<br />PS5<br />XBOX</strong></td>
+            </tr>
+        </tbody>
+
+        <tbody class="table-group-divider">
+            <tr>
+                <th scope="row"><img src="img/png3.jpg" width="40px" height="40px" />Mattia <br />Snodato </th>
+                <td><strong>Hogwarts Legacy</strong></td>
+                <td>
+                    <strong>
+                        Buonasera a tutti,ho comprato un Logitech MX Master 3S e ho provato a installare il relativo software Logi Options+. Quando provo a installarlo, mi appare questo messaggio di errore.<br />
+                        <img src="https://i.postimg.cc/Df1M18Gz/impossibiletrovare.jpg" /> <br />
+                        n pratica, sto cercando di forzare l'installazione del software, pensato per Windows 10 e 11, dentro Windows 7 64bit e giustamente lui fa i capricci.
+                        C'è la possibilità di aggirare l'ostacolo in qualche modo?
+                        Ho provato a scaricare la .dll da internet e copiarla sia dentro Windows/System32 che dentro Windows/SysWOW64, ma nulla da fare. Da quanto ho capito è qualcosa legato a MS Visual Studio.
+                        E' un mouse bellissimo, ma non poterne usare le funzioni avanzate è davvero frustrante. E' come aver comprato una Ferrari e non poter superare i 50Km/h.
+                    </strong>
+                </td>
+                <td><strong>PS5</strong></td>
+            </tr>
+        </tbody>
+
+        <tbody class="table-group-divider">
+            <tr>
+                <th scope="row"><img src="img/png4.jpg" width="40px" height="40px" />Vortice39</th>
+                <td><strong>Minecraft</strong></td>
+                <td>
+                    <strong>
+                        Salve ragazzi volevo chiedere come si realizasse una mod per minecraft mi sono gia informato su qualcosina come linguaggi <br />
+                        conosco abbastanza il c e il java lo sto imparando grazie per chi mi risponde
+                    </strong>
+                </td>
+                <td><strong>PC</strong></td>
+            </tr>
+        </tbody>
+
+        <tbody class="table-group-divider">
+            <tr>
+                <th scope="row"><img src="img/png5.jpg" width="40px" height="40px" />Franco <br />Giga</th>
+                <td><strong>The Last of Us</strong></td>
+                <td>
+                    <strong>
+                        ho playstation 3 (che fa ancora la sua porca figura) ma stavo pensando alla ps5, quando uscirà la pro e le altre (le varie versioni) abbasseranno il prezzo.<br />
+                        Ma se volessi invece farmi un pc da gaming (tenendo conto che anche il notebook portatile è vecchio), quanto si spenderebbe per un assemblato (magari pure da upgradare ogni tanto se possibile),<br />
+                        che faccia girare i vari Assetto Corsa e The Last Of Us (per citare 2 esempi che dovrebbero sfruttare più l'hardware) al pari di ps5, senza nessun problema, nè lag scandalosi (diciamo tutto di prestazioni pari alla ps5)??
+                    </strong>
+                </td>
+                <td><strong>PS4 <br /> PS5</strong></td>
+            </tr>
+        </tbody>
+
+        <tbody class="table-group-divider">
+            <tr>
+                <th scope="row"><img src="img/png6.jpg" width="40px" height="40px" />Drago001</th>
+                <td><strong>Fifa 23</strong></td>
+                <td>
+                    <strong>
+                        Ciao, spero sia la sezione giusta.<br />
+                        Su Fifa 23 quando giochiamo in 3 o 4 giocatori (non online) con ognuno il proprio controller e profilo connesso a prescindere l'impostazione del controller non viene salvata. <br />
+                        Su 4 giocatori, solo 2 profili controller (alternativo, personalizzato, 2 pulsanti o classico) vengono salvati mentre per gli altri qualunque scelta non viene mantenuta e spesso viene abbinato al profilo di un altro controller. <br />
+                        Succede anche a voi?<br />
+                        Come si può risolvere?<br />
+                        Grazie.
+                    </strong>
+                </td>
+                <td><strong>PC <br />PS4<br />PS5 <br />XBOX</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br /> <br /> <br /> <br />
+
+    <!--parte finale-->
+    <footer>
+        <div>
+            <p style="text-align:left ">
+                Contatti: <br />
+                Telefono:3352287023<br />
+                Indirizzo: Via Spada Tratta, 12 Los Angels<br />
+                Email: OtakuPixelPlay@gmail.com
+            </p>
+        </div>
+        <div>
+            <button type="button"><img src="img/mastercard.png" width="80px" /></button>
+            <button type="button"><img src="img/paypal.png" width="60px" /></button>
+            <button type="button"><img src="img/visa.png" width="80px" /></button>
+
+        </div>
+        <br />
+        <button type="button"><img src="img/iglogo.png" width="20px" height="20px" /></button>
+        <button type="button"><img src="img/tiktok.png" width="20px" height="20px" /></button>
+        <button type="button"><img src="img/fsocial.png" width="20px" height="20px" /></button>
+        <p> &copy; 2024 OtakuPixelPlay. Tutti i diritti riservati.</p><br />
+    </footer>
+</body>
+</html>

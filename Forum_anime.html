@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Forum Anime</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/logoPanda2.png" type="image/png">
+    <style>
+        body {
+            background-color: #bebebc;
+        }
+
+        table {
+            font-size: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        div .button {
+            border-radius: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left; /* rendere le tabelle per x tutti i dispositivi*/
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        @media only screen and (max-width: 600px) {
+            th, td {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> <img src="img/logoPanda2.png" width="80px" style="border-radius:30px" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--contenuto-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!--videogiochi-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="Videogiochi.html">Videogiochi</a>
+                    </li>
+                    <!--Anime-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="Anime.html">Anime</a>
+                    </li>
+                    <!--Forum-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Forum
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Forum_videogiochi.html">Videogiochi</a></li>
+                            <li><a class="dropdown-item" href="Forum_anime.html">Anime</a></li>
+                        </ul>
+                    </li>
+                    <!--Recensioni-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Recensioni
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="recensioniGame.html">Videogiochi</a></li>
+                            <li><a class="dropdown-item" href="Recensioni_anime.html">Anime</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <!--Scritta centrale OtakuPixelPlay-->
+                <div style="color: white; margin-right:auto;">
+                    <a href="index.html" style=" text-decoration: none; color:white"><h1>OtakuPixelPlay</h1></a>
+                </div>
+
+
+                <!-- Pulsanti registrati e accedi-->
+                <div style="margin-right:20px">
+                    <button type="button" class="btn btn-outline-success" style="color:ghostwhite"><a href="Accedi.html" style=" text-decoration: none; color:white">Accedi</a></button>
+                    <button type="button" class="btn btn-outline-success" style="color: ghostwhite "><a href="Registrati.html" style=" text-decoration: none; color:white">Registrati</a></button>
+                </div>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="box-shadow: 0 0 0 1px rgba(95, 177, 97, 0.5); color: ghostwhite;">
+                    <button class="btn btn-outline-success" type="submit" style="color: white;">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br />
+    <!--Parte sfondo-->
+    <h5 style="text-align: center; margin: 20px; background-image: url(img/sfondoTesto.jpg); border-radius: 20px; padding: 20px; color: white;">
+        "Benvenuti al Forum di OtakuPixelPlay, il luogo ideale per tutti gli appassionati di anime! Qui potrete esplorare e discutere le ultime serie, film e manga, condividere le vostre opinioni e recensioni, 
+        scoprire nuovi titoli da guardare e connettervi con una community appassionata e accogliente. Che tu sia un fan di lunga data o un neofita nel mondo degli anime, troverai spazio per esprimere la tua passione e incontrare altri appassionati con gusti simili. 
+        Entra a far parte della nostra community e immergiti nell'emozionante universo degli anime su OtakuPixelPlay Forum!"
+    </h5>
+    <br />
+
+    <!--Tabella-->
+
+    <h1 style="text-align: center; margin-top: 30px;"><strong>FORUM ANIME</strong></h1>
+    <br /><br />
+
+    <table class="table-secondary">
+        <thead>
+            <tr style="background-color:#bebebc;">
+                <th scope="col">Utente</th>
+                <th scope="col">Nome Anime</th>
+                <th scope="col">Discussione</th>
+
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            <tr>
+                <th scope="row"><img src="img/png1.jpg" width="40px" height="40px" />lore.92</th>
+                <td><strong>Attack of <br /> Titans</strong></td>
+                <td>
+                    <strong>
+                        Qual è il ruolo della libertà nella trama di "Attack on Titan"? Come la ricerca di libertà influisce sulle decisioni e sullo sviluppo dei personaggi principali,<br />
+                        come Eren, e in che modo questa tematica contribuisce alla profondità e complessità della storia?
+                    </strong>
+                </td>
+            </tr>
+        </tbody>
+        <!--Baki-->
+        <tbody class="table-group-divider">
+            <tr>
+                <th scope="row"><img src="img/png2.jpg" width="40px" height="40px" />Articuno06</th>
+                <td><strong>Baki</strong></td>
+                <td>
+                    <strong>
+                        Sul piano delle arti marziali e della forza fisica, chi considerate il personaggio più iconico o impressionante in "Baki"? <br />
+                        Cosa rende quel personaggio così notevole secondo voi, e quali sono i momenti chiave nelle sue battaglie che vi hanno colpito di più?
+                    </strong>
+                </td>
+
+            </tr>
+        </tbody>
+        <!--Vinland-->
+        <tbody class="table-group-divider">
+            <tr>
+                <th scope="row"><img src="img/png3.jpg" width="40px" height="40px" />Vampir.21</th>
+                <td><strong>Vinland <br /> Saga</strong></td>
+                <td>
+                    <strong>
+                        Nel contesto della serie "Vinland Saga", come vedete l'evoluzione del protagonista, Thorfinn, nel corso della storia? <br />
+                        Quali sono stati i momenti più significativi che hanno contribuito al suo sviluppo come personaggio, <br />
+                        e come quest'evoluzione ha influenzato il vostro punto di vista sulla narrazione complessiva della serie?
+                    </strong>
+                </td>
+            </tr>
+        </tbody>
+        <!--dragon ball-->
+        <tbody class="table-group-divider">
+            <tr>
+                <th scope="row"><img src="img/png4.jpg" width="40px" height="40px" />DrafonFan81</th>
+                <td><strong>Dragon Ball</strong></td>
+                <td>
+                    <strong>
+                        In "Dragon Ball", le trasformazioni dei personaggi sono una parte essenziale della trama.<br />
+                        Qual è la vostra trasformazione preferita tra Super Saiyan, Super Saiyan Blue, Ultra Instinct e altre, e perché? <br /> Inoltre,
+                        come pensate che l'evoluzione delle trasformazioni abbia influenzato la struttura delle storie e la percezione dei personaggi nel corso della serie?
+                    </strong>
+                </td>
+            </tr>
+        </tbody>
+        <!--One pice-->
+        <tbody class="table-group-divider">
+            <tr>
+                <th scope="row"><img src="img/png5.jpg" width="40px" height="40px" />Paglia-fan.67</th>
+                <td><strong>One Piece</strong></td>
+                <td>
+                    <strong>
+                        Ciao a tutti i pirati e navigatori appassionati di One Piece! In questa discussione,<br />
+                        vogliamo esplorare insieme il vasto mondo creato da Eiichiro Oda e condividere le nostre opinioni, teorie e entusiasmi riguardo a questa epica saga. <br />
+                        Che tu sia un ciurma di lunga data o un nuovo arrivato nell'Oceano di Grand Line, sentiti libero di esprimere le tue idee su qualsiasi aspetto della serie!
+                    </strong>
+                </td>
+            </tr>
+        </tbody>
+        <!--Naruto-->
+        <tbody class="table-group-divider">
+            <tr>
+                <th scope="row"><img src="img/png6.jpg" width="40px" height="40px" />Narutstyle.11</th>
+                <td><strong>Naruto</strong></td>
+                <td>
+                    <strong>
+                        Salve a tutti ninja appassionati di Naruto! In questa discussione, vorrei che condividessimo le nostre opinioni, teorie e riflessioni sul vasto mondo di Naruto, <br />
+                        che ha appassionato milioni di fan in tutto il mondo.<br />
+                        Che tu sia un fan di lunga data o un nuovo arrivato nel Villaggio della Foglia, sentiti libero di esprimere le tue idee su qualsiasi aspetto della serie!
+                    </strong>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br /> <br /><br /> <br /> <br /> <br /> <br /> <br /> <br />
+    <!--Parte finale-->
+    <footer>
+        <div>
+            <p style="text-align:left ">
+                Contatti: <br />
+                Telefono:3352287023<br />
+                Indirizzo: Via Spada Tratta, 12 Los Angels<br />
+                Email: OtakuPixelPlay@gmail.com
+            </p>
+        </div>
+        <div>
+            <button type="button"><img src="img/mastercard.png" width="80px" /></button>
+            <button type="button"><img src="img/paypal.png" width="60px" /></button>
+            <button type="button"><img src="img/visa.png" width="80px" /></button>
+
+        </div>
+        <br />
+        <button type="button"><img src="img/iglogo.png" width="20px" height="20px" /></button>
+        <button type="button"><img src="img/tiktok.png" width="20px" height="20px" /></button>
+        <button type="button"><img src="img/fsocial.png" width="20px" height="20px" /></button>
+        <p> &copy; 2024 OtakuPixelPlay. Tutti i diritti riservati.</p><br />
+    </footer>
+
+
+</body>
+</html>

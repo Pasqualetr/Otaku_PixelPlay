@@ -1,0 +1,391 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <title>Anime</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link per utilizzare framwork bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/logoPanda2.png" type="image/png">
+        <title > </title >
+
+        <style>
+
+            #carouselExampleDark {
+                width: 60%;
+                height: 30%;
+                overflow-x: auto;
+                border-collapse: collapse;
+            }
+
+            .cod {
+                color: white;
+            }
+
+            body {
+                background-color: #bebebc;
+            }
+
+
+            footer {
+                text-align: center;
+                background-color: black;
+                color: white;
+            }
+
+            div .button {
+                border-radius: none;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            th, td {
+                padding: 8px;
+                text-align: left; /* rendere le tabelle per x tutti i dispositivi*/
+            }
+
+            .table-container {
+                overflow-x: auto;
+            }
+
+            @media only screen and (max-width: 600px) {
+                th, td {
+                    display: block;
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+            }
+
+            @media only screen and (max-width: 600px) {
+                #carouselExampleDark {
+                    display: block;
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+            }
+        </style>
+ </head >
+ <body>
+
+     <!--NavBar-->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+         <div class="container-fluid">
+             <a class="navbar-brand" href="index.html"> <img src="img/logoPanda2.png" width="80px" style="border-radius:30px" /></a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <!--contenuto-->
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <!--videogiochi-->
+                     <li class="nav-item">
+                         <a class="nav-link" href="Videogiochi.html">Videogiochi</a>
+                     </li>
+                     <!--Anime-->
+                     <li class="nav-item">
+                         <a class="nav-link" href="Anime.html">Anime</a>
+                     </li>
+                     <!--Forum-->
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             Forum
+                         </a>
+
+                         <ul class="dropdown-menu">
+                             <li><a class="dropdown-item" href="Forum_videogiochi.html">Videogiochi</a></li>
+                             <li><a class="dropdown-item" href="Forum_anime.html">Anime</a></li>
+                         </ul>
+                     </li>
+                     <!--Recensioni-->
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             Recensioni
+                         </a>
+
+                         <ul class="dropdown-menu">
+                             <li><a class="dropdown-item" href="recensioniGame.html">Videogiochi</a></li>
+                             <li><a class="dropdown-item" href="Recensioni_anime.html">Anime</a></li>
+                         </ul>
+                     </li>
+
+
+                 </ul>
+
+                 <!--Scritta centrale OtakuPixelPlay-->
+                 <div style="color: white; margin-right: auto;">
+                     <a href="index.html" style=" text-decoration: none; color:white"><h1>OtakuPixelPlay</h1></a>
+                 </div>
+
+
+                 <!-- Pulsanti registrati e accedi-->
+                 <div style="margin-right:20px">
+                     <button type="button" class="btn btn-outline-success" style="color:ghostwhite"><a href="Accedi.html" style=" text-decoration: none; color:white">Accedi</a></button>
+                     <button type="button" class="btn btn-outline-success" style="color: ghostwhite "><a href="Registrati.html" style=" text-decoration: none; color:white">Registrati</a></button>
+                 </div>
+
+                 <form class="d-flex" role="search">
+                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="box-shadow: 0 0 0 1px rgba(95, 177, 97, 0.5); color: ghostwhite;">
+                     <button class="btn btn-outline-success" type="submit" style="color: white;">Search</button>
+                 </form>
+             </div>
+         </div>
+
+     </nav>
+
+
+     <br />
+     <h5 style="text-align: center; margin: 20px; background-image: url(img/sfondoTesto.jpg); border-radius: 20px; padding: 20px; color: white;">
+         Entra nel fantastico mondo di OtakuPixelPlay, dove la passione per gli anime si unisce alla facilità di accesso ai tuoi streaming preferiti.
+         Siamo qui per soddisfare la tua sete di anime, offrendoti una vasta selezione di titoli, dagli epici classici alle ultime serie in simulcast.
+
+     </h5>
+     <br />
+     <br />
+
+
+     <!--Bottone destra e sinistra-->
+     <div id="carouselExampleDark" class="carousel carousel-dark slide" style="margin:auto">
+         <div class="carousel-indicators">
+             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+         </div>
+         <!--Carosello immagini-->
+         <div class="carousel-inner">
+             <div class="carousel-item active" data-bs-interval="10000">
+                 <img src="img/DBS2.webp" class="d-block w-100" alt="Prima Immagine" style="border-radius:30px">
+                 <div class="carousel-caption d-none d-md-block">
+                     <h5 class="cod"><strong>Dragonball Super</strong></h5>
+                     <p class="cod">
+                         Esplora l'universo emozionante di Dragon Ball Super,
+                         dove l'amicizia è la chiave per sconfiggere il male in battaglie epiche che ti terranno con il fiato sospeso!
+                     </p>
+                 </div>
+             </div>
+             <div class="carousel-item" data-bs-interval="2000">
+                 <img src="img/jut.jpeg" class="d-block w-100" alt="Seconda Immagine" style="border-radius:30px">
+                 <div class="carousel-caption d-none d-md-block">
+                     <h5 class="cod"><strong>Seconda Stagione ora disponibile</strong></h5>
+                     <p class="cod">La seconda stagione e disponibile in streaming</p>
+                 </div>
+             </div>
+             <div class="carousel-item">
+                 <img src="img/aot2.jpeg" class="d-block w-100" alt="Terza Immagine" style="border-radius:30px">
+                 <div class="carousel-caption d-none d-md-block">
+                     <h5 class="cod"><strong>Attack on titans</strong></h5>
+                     <p class="cod">L'ultimo episodio disponibile anche in italiano</p>
+                 </div>
+             </div>
+
+             <div class="carousel-item">
+                 <img src="img/block.jpeg" class="d-block w-100" alt="Terza Immagine" style="border-radius:30px">
+                 <div class="carousel-caption d-none d-md-block">
+                     <h5 class="cod"><strong>Bluelock</strong></h5>
+                     <p class="cod">Talento, rivalità e strategia si scontrano in un campo da calcio fuori dal comune. </p>
+                 </div>
+             </div>
+
+
+
+             <div class="carousel-item">
+                 <img src="img/narutos.jpeg" class="d-block w-100" alt="Quinta Immagine" style="border-radius:30px">
+                 <div class="carousel-caption d-none d-md-block">
+                     <h5 class="cod"><strong>Naruto Shippuden</strong></h5>
+                     <p class="cod">
+                         Entra nel mondo di Naruto Shippuden:
+                         azione, amicizia e avventura ti aspettano in un'epica battaglia per la pace!
+                     </p>
+                 </div>
+             </div>
+
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">Next</span>
+         </button>
+     </div>
+     <br />
+     <br />
+     <table >
+         <tr>
+             <td>
+                 <!--card-->
+                 <div class="card mb-3" style="max-width: 540px; margin-right: 70px; margin-left:70px">
+                     <div class="row g-0">
+                         <div class="col-md-4">
+                             <img src="img/demon2.webp" class="img-fluid rounded-start" alt="Immagine1">
+                         </div>
+                         <div class="col-md-8">
+                             <div class="card-body">
+                                 <h5 class="card-title">Demon Slayer</h5>
+                                 <p class="card-text">
+                                     Tanjiro è il primogenito di una famiglia che ha perso il padre.
+                                     Un giorno, visita un’altra città per vendere carbone ma finisce col passare la notte lì.
+                                     Quando torna a casa il giorno seguente, ad attenderlo ci sarà una tragedia..
+                                 </p>
+                                 <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                 <a href="https://www.primevideo.com/-/it/offers/nonprimehomepage/ref=atv_hom_offers_c_9zZ8D2_hom?language=it_IT" class="btn btn-primary">Amazon Prime Video</a>
+                                 <a href="https://www.netflix.com/it/" class="btn btn-danger">Netflix</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </td>
+             <td>
+                 <div class="card mb-3" style="max-width: 540px; margin-right: 70px;">
+                     <div class="row g-0">
+                         <div class="col-md-4">
+                             <img src="img/aot3.webp" class="img-fluid rounded-start" alt="Immagine1">
+                         </div>
+                         <div class="col-md-8">
+                             <div class="card-body">
+                                 <h5 class="card-title">Attack on Titan</h5>
+                                 <p class="card-text">
+                                     Il giovane Eren Yeager è deciso a lottare contro i Giganti che hanno distrutto la sua città e minacciano di fare lo stesso con l'intera razza umana.
+                                 </p>
+                                 <br /><br />
+                                 <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                 <a href="https://www.primevideo.com/-/it/offers/nonprimehomepage/ref=atv_hom_offers_c_9zZ8D2_hom?language=it_IT" class="btn btn-primary">Amazon Prime Video</a>
+                                 <a href="https://www.netflix.com/it/" class="btn btn-danger">Netflix</a>
+                                 <br />
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </td>
+             <td>
+
+                 <div class="card mb-3" style="max-width: 540px;">
+                     <div class="row g-0">
+                         <div class="col-md-4">
+                             <img src="img/tokyo.webp" class="img-fluid rounded-start" alt="Immagine1">
+                         </div>
+                         <div class="col-md-8">
+                             <div class="card-body">
+                                 <h5 class="card-title">Tokyo Revengers</h5>
+                                 <p class="card-text">
+                                     Takemichi è un disoccupato di 26 anni la cui unica ragazza, avuta alle scuole medie, è recentemente morta. In seguito ad un incidente,
+                                     lo stesso Takemichi si ritrova all'improvviso ai tempi delle scuole medie;
+                                     il ragazzo si ripromette così di cambiare il futuro e di salvare la ragazza
+                                 </p>
+                                 <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                 <a href="https://www.crunchyroll.com/it/" class="btn btn-warning">Crunchyroll</a>
+
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+             </td>
+         </tr>
+     </table>
+     <!--tabella 2-->
+     <table>
+         <tr>
+             <th>
+                 <div class="card mb-3" style="max-width: 540px; margin-right: 70px; margin-left:70px">
+                     <div class="row g-0">
+                         <div class="col-md-4">
+                             <img src="img/nana.webp" class="img-fluid rounded-start" alt="Immagine1">
+                         </div>
+                         <div class="col-md-8">
+                             <div class="card-body">
+                                 <h5 class="card-title">NANA</h5>
+                                 <p class="card-text">
+                                     un anime basato sull'acclamato manga di Ai Yazawa. La serie segue le vite incrociate di due giovani donne, entrambe di nome Nana,
+                                     che si incontrano per caso su un treno diretto a Tokyo. Nonostante abbiano personalità e background completamente diversi, Nana Komatsu e Nana Osaki sviluppano
+                                     un'amicizia profonda e significativa mentre affrontano le sfide e le gioie della vita nella metropoli giapponese
+                                 </p>
+                                 <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                 <a href="https://www.netflix.com/it/" class="btn btn-danger">Netflix</a>
+
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </th>
+
+             <th>
+                 <div class="card mb-3" style="max-width: 540px; margin-right: 70px;">
+                     <div class="row g-0">
+                         <div class="col-md-4">
+                             <img src="img/hunter.jpeg" class="img-fluid rounded-start" alt="Immagine1">
+                         </div>
+                         <div class="col-md-8">
+                             <div class="card-body">
+                                 <h5 class="card-title">Hunter x Hunter</h5>
+                                 <p class="card-text">
+                                     L'anime "Hunter x Hunter" segue fedelmente il manga di Togashi
+                                     e ha guadagnato una vasta popolarità per la sua trama avvincente,
+                                     il character design distintivo e le intense scene di combattimento. La serie è stata prodotta in diverse versioni, tra cui quella del 1999 e quella del 2011,
+                                     quest'ultima considerata più fedele al manga originale e con una produzione di qualità superiore.
+                                 </p>
+                                 <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                 <a href="https://www.crunchyroll.com/it/" class="btn btn-warning">Crunchyroll</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </th>
+
+             <th>
+                 <div class="card mb-3" style="max-width: 540px;">
+                     <div class="row g-0">
+                         <div class="col-md-4">
+                             <img src="img/naruto.webp" class="img-fluid rounded-start" alt="Immagine1">
+                         </div>
+                         <div class="col-md-8">
+                             <div class="card-body">
+                                 <h5 class="card-title">Naruto Shippuden</h5>
+                                 <p class="card-text">
+                                     "Naruto Shippuden" è il seguito dell'anime "Naruto" e si basa sul manga di Masashi Kishimoto.
+                                     La serie segue le avventure di Naruto Uzumaki e dei suoi amici mentre cercano di diventare ninja di alto livello e proteggere il loro villaggio, Konoha,
+                                     da minacce sempre più grandi. In "Shippuden", Naruto ritorna al villaggio dopo un addestramento intensivo per diventare più forte e salvare il suo amico Sasuke Uchiha.
+                                 </p>
+                                 <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                 <a href="https://www.crunchyroll.com/it/" class="btn btn-warning">Crunchyroll</a>
+                                 <a href="https://www.primevideo.com/-/it/offers/nonprimehomepage/ref=atv_hom_offers_c_9zZ8D2_hom?language=it_IT" class="btn btn-primary">Amazon Prime Video</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </th>
+         </tr>
+     </table>
+      <br /><br />
+     <!--parte finale-->
+     <footer>
+         <div>
+             <p style="text-align:left ">
+                 Contatti: <br />
+                 Telefono:3352287023<br />
+                 Indirizzo: Via Spada Tratta, 12 Los Angels<br />
+                 Email: OtakuPixelPlay@gmail.com
+             </p>
+         </div>
+         <div>
+             <button type="button"><img src="img/mastercard.png" width="80px" /></button>
+             <button type="button"><img src="img/paypal.png" width="60px" /></button>
+             <button type="button"><img src="img/visa.png" width="80px" /></button>
+
+         </div>
+         <br />
+         <button type="button"><img src="img/iglogo.png" width="20px" height="20px" /></button>
+         <button type="button"><img src="img/tiktok.png" width="20px" height="20px" /></button>
+         <button type="button"><img src="img/fsocial.png" width="20px" height="20px" /></button>
+         <p> &copy; 2024 OtakuPixelPlay. Tutti i diritti riservati.</p><br />
+     </footer>
+ </body>
+</html >

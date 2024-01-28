@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- rende responsive la pagina-->
+    <meta name="keywords" content="Giochi,Anime, Otaku,Accedi" />
+    <meta name="author" content="Claudio, Pasquale, Antonio" />
+    <meta name="description" content="Accedi, OtakuPixelPlay" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/logoPanda2.png" type="image/png">
+    <meta charset="utf-8" />
+    <title>Accedi ad OtakuPixelPlay!!</title>
+
+    <style>
+        body {
+            background-color: #bebebc;
+        }
+
+
+        footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        div .button {
+            border-radius: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> <img src="img/logoPanda2.png" width="80px" style="border-radius:30px" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--contenuto-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!--videogiochi-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="Videogiochi.html">Videogiochi</a>
+                    </li>
+                    <!--Anime-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="Anime.html">Anime</a>
+                    </li>
+                    <!--Forum-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Forum
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Forum_videogiochi.html">Videogiochi</a></li>
+                            <li><a class="dropdown-item" href="Forum_anime.html">Anime</a></li>
+                        </ul>
+                    </li>
+                    <!--Recensioni-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Recensioni
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="recensioniGame.html">Videogiochi</a></li>
+                            <li><a class="dropdown-item" href="Recensioni_anime.html">Anime</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <!--Scritta centrale OtakuPixelPlay-->
+                <div style="color: white; margin-right: auto">
+                    <a href="index.html" style=" text-decoration: none; color:white"><h1>OtakuPixelPlay</h1></a>
+                </div>
+
+
+                <!-- Pulsanti registrati e accedi-->
+                <div style="margin-right:20px">
+                    <button type="button" class="btn btn-outline-success" style="color:ghostwhite"><a href="Accedi.html" style=" text-decoration: none; color:white">Accedi</a></button>
+                    <button type="button" class="btn btn-outline-success" style="color: ghostwhite "><a href="Registrati.html" style=" text-decoration: none; color:white">Registrati</a></button>
+                </div>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="box-shadow: 0 0 0 1px rgba(95, 177, 97, 0.5); color: ghostwhite;">
+                    <button class="btn btn-outline-success" type="submit" style="color: white;">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--Descrizione-->
+
+    <h5 style="text-align: center; margin: 20px; background-image: url(img/sfondoTesto.jpg); border-radius: 20px; padding: 20px; color: white;">
+        Accedi a OtakuPixelPlay e immergiti nel mondo dell'intrattenimento videoludico e anime come mai prima d'ora! Entra nel tuo account per accedere a contenuti esclusivi, partecipare alle discussioni della community, salvare i tuoi preferiti e ricevere aggiornamenti personalizzati sulle ultime novità. Non perdere l'opportunità di vivere un'esperienza unica e connetterti con altri appassionati come te. Accedi ora e inizia il tuo viaggio su OtakuPixelPlay!
+    </h5>
+
+    <!--Campo Accedi-->
+
+
+    <form style="margin:100px; background-color:lightgrey;padding:30px;border-radius:30px;">
+
+        <div class="row mb-3">
+            <label for="nicknameInput" class="col-sm-2 col-form-label">Nickname</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="nicknameInput" placeholder="Inserisci il tuo nickname" required>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label for="emailInput" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="emailInput" placeholder="Inserisci la tua email" required>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label for="passwordInput" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="passwordInput" placeholder="Inserisci la tua password" required>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+
+        </div>
+        <button type="submit" class="btn btn-primary">Accedi</button>
+    </form>
+
+
+    <!--footer-->
+
+    <footer>
+        <div>
+            <p style="text-align:left ">
+                Contatti: <br />
+                Telefono:3352287023<br />
+                Indirizzo: Via Spada Tratta, 12 Los Angels<br />
+                Email: OtakuPixelPlay@gmail.com
+            </p>
+        </div>
+        <div>
+            <button type="button"><img src="img/mastercard.png" width="80px" /></button>
+            <button type="button"><img src="img/paypal.png" width="60px" /></button>
+            <button type="button"><img src="img/visa.png" width="80px" /></button>
+
+        </div>
+        <br />
+        <button type="button"><img src="img/iglogo.png" width="20px" height="20px" /></button>
+        <button type="button"><img src="img/tiktok.png" width="20px" height="20px" /></button>
+        <button type="button"><img src="img/fsocial.png" width="20px" height="20px" /></button>
+        <p> &copy; 2024 OtakuPixelPlay. Tutti i diritti riservati.</p><br />
+    </footer>
+
+
+</body>
+</html>

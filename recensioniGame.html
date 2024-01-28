@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <title>Recensioni</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link per utilizzare framwork bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/logoPanda2.png" type="image/png">
+    <title> </title>
+
+    <style>
+
+        #carouselExampleDark {
+            width: 900px;
+            height: 500px;
+        }
+
+        .cod {
+            color: black;
+            background-color: rgba(255,255,255,0.2);
+            border-radius: 20%;
+        }
+
+        body {
+            background-color: #bebebc;
+        }
+
+
+        footer {
+            text-align: center;
+            background: black;
+            color: white;
+        }
+
+        .recensione {
+            margin: 30px;
+            color: white;
+            background-image: url(img/pattern2.jpg);
+            border-radius: 27px;
+            padding-left: 10px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> <img src="img/logoPanda2.png" width="80px" style="border-radius:30px" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--contenuto-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!--videogiochi-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="Videogiochi.html">Videogiochi</a>
+                    </li>
+                    <!--Anime-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="Anime.html">Anime</a>
+                    </li>
+                    <!--Forum-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Forum
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Forum_videogiochi.html">Videogiochi</a></li>
+                            <li><a class="dropdown-item" href="Forum_anime.html">Anime</a></li>
+                        </ul>
+                    </li>
+                    <!--Recensioni-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Recensioni
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="recensioniGame.html">Videogiochi</a></li>
+                            <li><a class="dropdown-item" href="Recensioni_anime.html">Anime</a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+
+                <!--Scritta centrale OtakuPixelPlay-->
+                <div style="color: white; margin-right: auto;">
+                    <a href="index.html" style=" text-decoration: none; color:white"><h1>OtakuPixelPlay</h1></a>
+                </div>
+
+
+                <!-- Pulsanti registrati e accedi-->
+                <div style="margin-right:20px">
+                    <button type="button" class="btn btn-outline-success" style="color:ghostwhite"><a href="Accedi.html" style=" text-decoration: none; color:white">Accedi</a></button>
+                    <button type="button" class="btn btn-outline-success" style="color: ghostwhite "><a href="Registrati.html" style=" text-decoration: none; color:white">Registrati</a></button>
+                </div>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="box-shadow: 0 0 0 1px rgba(95, 177, 97, 0.5); color: ghostwhite;">
+                    <button class="btn btn-outline-success" type="submit" style="color: white;">Search</button>
+                </form>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <br />
+    <h5 style="text-align: center; margin: 20px; background-image: url(img/sfondoTesto.jpg); border-radius: 20px; padding: 20px; color: white;">
+        Benvenuto nella sezione delle recensioni di OtakuPixelPlay, dove la comunità otaku si unisce per condividere le proprie opinioni, esperienze e raccomandazioni su videogiochi .
+        Qui troverai una vasta gamma di recensioni dettagliate, scritte da appassionati come te, pronti a guidarti nella scelta del prossimo titolo da giocare.
+
+
+    </h5>
+    <br />
+    <br />
+
+    <main>
+        <!--Recensioni Clienti-->
+        <h1 style="margin-left:10px;">Recensioni Videogiochi</h1>
+        <br />
+        <p style="margin-left:10px;">Recensioni 5  </p>
+        <h3 style="margin-left:10px;">★★★★ | 4,4 ⓘ</h3>
+
+        <section class="recensioni">
+            <h2 style="margin-left:10px;">Recensioni degli Ospiti</h2>
+            <p style="margin-left:10px;"><strong>Uno spazio dedicato alle recensioni per condividere con gli utenti le priprie opinioni su i videogiochi.</strong></p>
+
+
+            <!--  recensioni degli ospiti -->
+            <div class="recensione" style="background-image: url(img/pattern2.jpg) ">
+
+                <!-- Recensione 1 -->
+
+                <h3 style="color:white;">The Legend of Zelda: Breath of the Wild - Un Capolavoro Assoluto! | ★★★★★</h3>
+                <p style="color:white;">Breath of the Wild è un'esperienza straordinaria che ridefinisce il concetto di avventura open-world. Con un vasto mondo da esplorare, una storia coinvolgente e una miriade di segreti da scoprire, questo gioco è un capolavoro assoluto.
+                <p style="color:white;"><em>- Eleonara </em></p>
+            </div>
+            <!-- Recensione 2 -->
+
+            <div class="recensione">
+                <h3>Cyberpunk 2077 - Un'Esperienza Disattesa ma Promettente| ★★★</h3>
+                <p>"Cyberpunk 2077 ha suscitato grandi aspettative, ma purtroppo non è riuscito a mantenere tutte le promesse fatte. Sebbene l'ambientazione futuristica e la trama siano affascinanti, il gioco soffre di numerosi bug e problemi tecnici che ne compromettono l'esperienza complessiva
+                <p><em>- Mario Rossi</em></p>
+            </div>
+            <!-- Recensione 3 -->
+
+            <div class="recensione">
+                <h3>Red Dead Redemption 2 - Un'Epopea Western da Vivere e Rivivere | ★★★★★</h3>
+                <p>Red Dead Redemption 2 è molto più di un semplice gioco: è un'esperienza cinematografica che ti trasporta nel selvaggio West come nessun altro gioco ha fatto prima. La storia è coinvolgente e piena di momenti epici, i personaggi sono memorabili e il mondo aperto è incredibilmente dettagliato
+                <p><em>- User_3214</em></p>
+            </div>
+
+            <!-- Recensione 4 -->
+            <div class="recensione">
+                <h3>Assassin's Creed Odyssey - Un Viaggio Epico nell'Antica Grecia | ★★★★</h3>
+                <p>Assassin's Creed Odyssey è un gioco ambizioso che porta i giocatori nell'affascinante mondo dell'Antica Grecia. Con una mappa vasta e dettagliata, una trama coinvolgente e una vasta gamma di missioni secondarie, offre un'esperienza di gioco ricca e appagante.
+                <p><em>- Luca Gialli</em></p>
+
+            </div>
+
+            <!-- Recensione 5 -->
+            <div class="recensione">
+                <h3>The Witcher 3: Wild Hunt - Un'Avventura Epica da Non Perdere!| ★★★★★</h3>
+                <p>The Witcher 3 è semplicemente fenomenale. Con una trama avvincente, personaggi ben sviluppati e un mondo vasto e ricco di dettagli, questo gioco ti cattura dall'inizio alla fine.
+                <p><em>- Martina Azzurri</em></p>
+            </div>
+        </section>
+    </main>
+    <form>
+
+        <div class="form-group">
+            <label for="customRange3" class="form-label">Valutazione da 1 a 5:</label>
+            <div class="stars-container">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+
+            <!--mb-3 per la grandezza-->
+            <div class="mb-3">
+                <label for="customRange2" class="form-label"></label>
+                <input type="range" class="form-range" min="0" max="5" id="customRange2">
+
+                <label for="nome" class="form-label">Nome:</label>
+                <input type="text" class="form-control" id="nome" placeholder="Inserisci il tuo nome" />
+            </div>
+            <div class="mt-3">
+                <label for="Titolo" class="form-label">Titolo</label>
+                <input type="text" class="form-control" id="txt" placeholder="Titolo" />
+
+            </div>
+            <!--Textarea e non input per far si di avere piu spazio nella sezione messaggio-->
+            <div class="mb-3">
+                <label for="messaggio" class="form-label">Recensione</label>
+                <textarea class="form-control" id="messaggio" rows="3" placeholder="inserisci il tuo messaggio"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Invia</button>
+        </div>
+    </form>
+
+    <br /> <br />
+
+    <footer>
+        <div>
+            <p style="text-align:left ">
+                Contatti: <br />
+                Telefono:3352287023<br />
+                Indirizzo: Via Spada Tratta, 12 Los Angels<br />
+                Email: OtakuPixelPlay@gmail.com
+            </p>
+        </div>
+        <div>
+            <button type="button"><img src="img/mastercard.png" width="80px" /></button>
+            <button type="button"><img src="img/paypal.png" width="60px" /></button>
+            <button type="button"><img src="img/visa.png" width="80px" /></button>
+
+        </div>
+        <br />
+        <button type="button"><img src="img/iglogo.png" width="20px" height="20px" /></button>
+        <button type="button"><img src="img/tiktok.png" width="20px" height="20px" /></button>
+        <button type="button"><img src="img/fsocial.png" width="20px" height="20px" /></button>
+        <p> &copy; 2024 OtakuPixelPlay. Tutti i diritti riservati.</p><br />
+    </footer>
+
+
+</body>
+</html>
